@@ -86,7 +86,7 @@ this.ron= rondas +"/10";
     localStorage.setItem("puntuacion", String(p) );
 
    this.goToNormal();
-   this.router.navigate(['/normal']);
+   window.location.assign('normal');
   
     
    }else{
@@ -140,7 +140,7 @@ updateTimeValue(){
   this.time.next(text); 
   --this.timer;
 
-  if(this.timer<=0){
+  if(this.timer==0){
     alert('Tiempo agotado')
     this.router.navigate(['menu']);
   localStorage.removeItem("partidas" );}
@@ -150,7 +150,7 @@ updateTimeValue(){
 
 
 goToNormal() {
-  this.router.navigate(['normal']);
+  window.location.assign('rush');
 }
 
 async putt() {
