@@ -27,6 +27,10 @@ const routes: Routes = [
     path: 'normal',
     loadChildren: () => import('./pages/normal/normal.module').then( m => m.NormalPageModule)
   },
+  {
+    path: 'rush',
+    loadChildren: () => import('./pages/rush/rush.module').then( m => m.RushPageModule)
+  },
 ];
 
 @NgModule({

@@ -25,8 +25,8 @@ style="
 
 <ion-item>
   <ion-input
-    [value]="username"
-    (input)="username=$event.target.value"
+    [value]="name"
+    (input)="name=$event.target.value"
     type="text"
     placeholder="Nombre"
   ></ion-input>
@@ -42,10 +42,10 @@ style="
 </ion-item>
 <br />
 <ion-button
-  [disabled]="!username ||!password "
+  [disabled]="!name ||!password "
   expand="block"
   shape="round"
-  (click)="register()"
+  (click)="login()"
   >Iniciar Secion</ion-button
 >
 
