@@ -137,12 +137,10 @@ export class BodyrComponent implements OnInit {
     this.time.next(text); 
     --this.timer;
   
-   if(this.timer==0){
+    if(this.timer==0){
       alert('Tiempo agotado')
-      localStorage.removeItem("rondas" );
       this.router.navigate(['menu']);
-    
-   }
+    localStorage.removeItem("partidas1" );}
   
   }
   
@@ -166,4 +164,3 @@ export class BodyrComponent implements OnInit {
   }
   
   }
-  
